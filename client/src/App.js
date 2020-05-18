@@ -39,7 +39,7 @@ class App extends Component {
     event.preventDefault();
     API.searchBook(this.state.title)
       .then(res => {
-        const bookIds = res.data.items.map(book => book.bookIds);
+        const bookIds = res.data.items.map(book => bookIds.book);
         this.setState({ jsonResult: res.data })
       }).catch(err => console.log(err));
   }
