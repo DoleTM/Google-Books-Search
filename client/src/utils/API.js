@@ -10,7 +10,7 @@ export default {
   },
   
   // Gets the saved books from the database (Library)
-  getLibrary: function() {
+  getSavedBooks: function() {
     axios.get("/api/books");
   },
   
