@@ -1,8 +1,5 @@
 import axios from "axios";
 
-const apiKey = "AIzaSyCfacTMg_IOhzvg5LV0ZXYShRDEA514klw";
-const resultLimit = "10";
-
 export default {
   // Gets books from the Google API
   getBooks: function(q) {
